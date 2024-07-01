@@ -67,7 +67,7 @@
                     else
                     {
                     ?>
-                        <a class="btn btn-success" href="081_cetak_excel_calon_mahasiswa.php">Cetak Excel</a>
+                        <a class="btn btn-success" href="081_cetak_excel_belum_daftar.php">Cetak Excel</a>
                     <?php
                     }
                     ?>
@@ -227,7 +227,7 @@
     $jmldata = mysqli_num_rows(mysqli_query($kon,"SELECT * FROM tb_formulir4 where status='Belum Lengkap'"));
       
     $jmlhalaman  = $p->jumlahHalaman($jmldata, $batas);
-    $linkHalaman = $p->navHalaman($_GET[halaman], $jmlhalaman);
+    $linkHalaman = $p->navHalaman($_GET['halaman'], $jmlhalaman);
 
     echo "</table><div class=\"paginationw\">$linkHalaman</div>";
     }
