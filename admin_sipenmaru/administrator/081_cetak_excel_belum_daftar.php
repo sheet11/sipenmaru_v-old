@@ -58,7 +58,7 @@
 		</tr>
         <?php           
             $i=1; 
-            $query=mysqli_query($kon,"select * from tb_formulir4 where status='Belum Membayar'");       
+            $query=mysqli_query($kon,"select * from tb_formulir4 where status='Belum Lengkap'");       
             while ($a=mysqli_fetch_array($query)) { 
             ?>
            <tr>
